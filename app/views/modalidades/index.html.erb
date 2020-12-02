@@ -1,0 +1,36 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2>Modalidades</h2>
+  </div>
+  <div class="panel-body">
+
+		<table class="table table-hover">
+		  <thead>
+		    <tr>
+		      <th>Titulo</th>
+		      <th>Limite</th>
+		      <th>Opções</th>
+		    </tr>
+		  </thead>
+
+		  <tbody>
+		    <% @modalidades.each do |modalidade| %>
+		      <tr>
+		        <td>	<%= link_to modalidade.titulo , modalidade, class: "" %></td>
+		        <td><%= modalidade.limite %></td>
+		        <td>
+		          <%= link_to ' ', edit_modalidade_path(modalidade),  class: "glyphicon glyphicon-pencil" %>
+		          <%= link_to ' ', modalidade, method: :delete, data: { confirm: 'Are you sure?' } , class: "glyphicon glyphicon-trash" %>
+						</td>
+		      </tr>
+		    <% end %>
+		  </tbody>
+		</table>
+
+		<br>
+		<%= will_paginate @modalidades, renderer: BootstrapPagination::Rails, previous_label: "Anterior", next_label: "Próxima" %>    	
+		<%= link_to 'Nova Modalidade', new_modalidade_path ,  class: "btn btn-default "%>
+
+
+	</div>
+</div>

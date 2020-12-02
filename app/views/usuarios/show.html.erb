@@ -1,0 +1,39 @@
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h2>Visualizar usuario</h2>
+	</div>
+
+
+
+	<p>
+		<strong>Nome:</strong>
+		<%= @usuario.nome %>
+	</p>
+
+	<p>
+		<strong>Email:</strong>
+		<%= @usuario.email %>
+	</p>
+
+	<p>
+		<strong>Matricula:</strong>
+		<%= @usuario.matricula %>
+	</p>
+
+	<p>
+		<strong>Curso:</strong>
+		<%= @usuario.curso %>
+	</p>
+
+	<p>
+		<strong>Tipo:</strong>
+		<%= @usuario.tipo %>
+	</p>
+
+	<%= link_to 'Alterar', edit_usuario_path(@usuario),  class: "glyphicon glyphicon-pencil" %> |
+	<%= link_to 'Voltar', usuarios_path ,  class: "glyphicon  glyphicon-backward "%>
+
+</div>
+</div>
+

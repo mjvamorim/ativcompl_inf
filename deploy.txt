@@ -1,0 +1,13 @@
+#Instruções para o deploy
+git add .
+git commit -m "Capistrano Update Server"
+git push origin master
+
+
+cap production test
+cap production deploy --prereqs
+cap production deploy
+
+
+#copiar o arquivo secrets.yml para pasta config
+#copiar a pasta com os comprovantes : public/uploads/atividade/anexo/...

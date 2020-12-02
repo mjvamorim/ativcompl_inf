@@ -1,0 +1,39 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h2>Usuarios</h2>
+		<%= render 'formbusca' %>
+	</div>
+	<div class="panel-body">
+
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Email</th>
+					<th>Curso</th>
+					<th>Tipo</th>
+					<th>Opções</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<% @usuarios.each do |usuario| %>
+				<tr>
+					<td><%= link_to usuario.nome , edit_usuario_path(usuario), class: "" %></td>
+					<td><%= usuario.email %></td>
+					<td><%= usuario.curso %></td>
+					<td><%= usuario.tipo %></td>
+					<td>
+						<%= link_to ' ', edit_usuario_path(usuario),  class: "glyphicon glyphicon-pencil" %>
+						<%= link_to ' ', usuario, method: :delete, data: { confirm: 'Are you sure?' } , class: "glyphicon glyphicon-trash" %>
+					</td>
+				</tr>
+				<% end %>
+			</tbody>
+		</table>
+		<br>
+		<%= will_paginate @users, renderer: BootstrapPagination::Rails, previous_label: "Anterior", next_label: "Próxima" %>    	<%= link_to 'Novo Usuário', new_usuario_path ,  class: "btn btn-default "%>
+
+
+	</div>
+</div>

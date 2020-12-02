@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AtivCompl</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+
+<%= render "layouts/navbar" %>
+
+<div>
+	<div class="row">
+		<div class="col-md-3">
+				<%= render "layouts/navbarlateral" %>
+			
+		</div>
+		<div class="col-md-6">
+			<div class="content-main">
+				<p class="notice"><%= notice %></p>
+				<p class="alert"><%= alert %></p>
+				<%= yield %>
+		</div>
+
+		</div>
+		<div class="col-md-3">
+
+		</div>
+	</div>
+</div>
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+</script>
+
+
+
+</body>
+</html>

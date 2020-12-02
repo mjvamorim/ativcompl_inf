@@ -1,0 +1,26 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2>Visualizar Modalidade</h2>
+  </div>
+
+
+		<p id="notice"><%= notice %></p>
+
+		<p>
+		  <strong>Titulo:</strong>
+		  <%= @modalidade.titulo %>
+		</p>
+
+		<p>
+		  <strong>Limite:</strong>
+		  <%= @modalidade.limite %>
+		</p>
+
+		<%= link_to 'Alterar', edit_modalidade_path(@modalidade),  class: "glyphicon glyphicon-pencil" %> |
+		<%= link_to 'Voltar', modalidades_path ,  class: "glyphicon  glyphicon-backward "%>
+
+	</div>
+</div>
+
+
+

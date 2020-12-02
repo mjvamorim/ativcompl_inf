@@ -1,0 +1,21 @@
+<%= form_tag(atividades_path, method: "get") do %>
+	<%= label_tag(:paluno, "Aluno:") %>
+	<%= text_field_tag(:paluno,  @paluno) %>
+
+  <!--
+  <%= label_tag(:ptipo, "Tipo:") %>
+  <%= select_tag :ptipo, options_for_select([['Todas',0],['Avaliadas',1],['Não avaliadas',2]],selected:@ptipo)  %>
+  -->
+	Tipo: 
+	<%= radio_button_tag :ptipo,'0', checked = (@ptipo=='0'), :onclick => "this.parentNode.submit()" %> Ambos
+	<%= radio_button_tag :ptipo,'1', checked = (@ptipo=='1'), :onclick => "this.parentNode.submit()"  %> Avaliadas
+	<%= radio_button_tag :ptipo,'2', checked = (@ptipo=='2'), :onclick => "this.parentNode.submit()"  %> Não Avaliadas
+	</br>
+	Data: <%= text_field_tag :pdatini,  @pdatini,class: "datepicker"  %>
+	 até: <%= text_field_tag :pdatfim,  @pdatfim,class: "datepicker"  %>
+	
+	<%= submit_tag 'Filtrar' ,  class: "btn btn-primary btn-sm"%>
+    <%= link_to 'Limpar', atividades_path ,  class: "btn btn-default btn-sm"%>
+    <%= link_to '  ', imprimir_atividades_path(@atividade,  :format => 'pdf') ,  class: "btn btn-default btn-sm glyphicon glyphicon-print",target: '_blank'%>
+<% end %>
+

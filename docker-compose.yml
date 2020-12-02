@@ -1,0 +1,53 @@
+version: '3'
+services:
+    db: 
+        image: mysql:5.7
+        container_name: db_ativ_inf
+        restart: always
+        tty: true
+        environment:
+            MYSQL_DATABASE: 'AtivCompl'
+            MYSQL_USER: root
+            MYSQL_PASSWORD: root
+            MYSQL_ROOT_PASSWORD: root
+            SERVICE_TAGS: 'dev'
+            SERVICE_NAME: mysql
+        volumes:
+            - ./dbdata:/var/lib/mysql
+            - ./docker-config/mysql/my.cnf:/etc/mysql/my.cnf
+        networks:
+            - ativ-network
+        ports:
+            - "3306:3306"
+    app: 
+        build: .
+        container_name: ativcomplinf
+        command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+        volumes: 
+            - ".:/app"
+        ports: 
+            - "3000:3000"
+        depends_on:
+            - db
+        links:
+            - db
+        environment:
+            DB_USERNAME: root
+            DB_PASSWORD: root
+            DB_DATABASE: atividades_inf
+            DB_PORT: 3306
+            DB_HOST: db
+            RAILS_ENV: development
+            RAILS_MAX_THREADS: 5
+        networks:
+            - ativ-network
+
+#Docker Networks          
+networks:
+  ativ-network:
+    driver: bridge
+
+#Volumes
+volumes:
+  dbdata:
+    driver: local

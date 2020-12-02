@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  descricao: MyString
+  modalidade_id: 
+  aluno_id: 
+  horas_req: 1
+  horas_jul: 1
+  anexo: MyString
+  julgador_id: 
+
+two:
+  descricao: MyString
+  modalidade_id: 
+  aluno_id: 
+  horas_req: 1
+  horas_jul: 1
+  anexo: MyString
+  julgador_id: 

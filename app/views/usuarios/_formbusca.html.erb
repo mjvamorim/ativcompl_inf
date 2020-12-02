@@ -1,0 +1,20 @@
+
+
+<%= form_tag(usuarios_path, method: "get") do %>
+	<%= label_tag(:pnome, "Nome:") %>
+	<%= text_field_tag(:pnome,  @pnome) %>
+
+  <!--
+  <%= label_tag(:ptipo, "Tipo:") %>
+  <%= select_tag :ptipo, options_for_select([['Todas',0],['Avaliadas',1],['Não avaliadas',2]],selected:@ptipo)  %>
+  -->
+	Tipo: 
+	<%= radio_button_tag :ptipo,'0', checked = (@ptipo=='0'), :onclick => "this.parentNode.submit()" %> Ambos
+	<%= radio_button_tag :ptipo,'1', checked = (@ptipo=='1'), :onclick => "this.parentNode.submit()"  %> Validados
+	<%= radio_button_tag :ptipo,'2', checked = (@ptipo=='2'), :onclick => "this.parentNode.submit()"  %> Não Validadados
+	
+	<%= submit_tag 'Filtrar' ,  class: "btn btn-primary btn-sm"%>
+    <%= link_to 'Limpar', usuarios_path ,  class: "btn btn-default btn-sm"%>
+ <% end %>
+
+

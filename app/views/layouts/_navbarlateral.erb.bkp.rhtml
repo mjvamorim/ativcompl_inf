@@ -1,0 +1,29 @@
+  <% if user_signed_in? %> 
+
+      
+      <div id="wrapper">
+         <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#" >
+                        <h4>Menu
+                    </a>
+                </li>
+                
+              <li > <h4><%= link_to " Home", pages_index_path, class: "glyphicon glyphicon-home" %> </h4></li>
+              <li > <h4><%= link_to " Atividades", atividades_path, class: "glyphicon glyphicon-inbox" %> </h4></li>
+              <li > <h4><%= link_to " Relatorio", atividadeslistagem_index_path(@atividade,  :format => 'pdf'), target: '_blank', class: "glyphicon glyphicon-print" %> </h4></li>
+              <% if current_user.tipo == "Administrador"%>
+                <li > <h4><%= link_to " Modalidades", modalidades_path, class: "glyphicon glyphicon-list-alt" %> </h4></li>
+                <li > <h4> <%= link_to " Usuarios", usuarios_path, class: "glyphicon glyphicon-user" %> </h4></li>
+              <% end %>
+              <li > <h4><%= link_to " Contato", pages_contact_path, class: "glyphicon glyphicon-phone-alt"  %></h4></li>
+              <li > <h4><%= link_to " Logout", destroy_user_session_path, method: :delete, class: "glyphicon glyphicon-off"   %></h4></li>
+            </ul>
+        </div>
+      </div>
+  <% end %>
+
+
+
+  

@@ -1,0 +1,47 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h2>Modalidades</h2>
+	</div>
+	<div class="panel-body">
+
+		<p id="notice"><%= notice %></p>
+
+		<p>
+			<strong>Descricao:</strong>
+			<%= @atividade.descricao %>
+		</p>
+
+		<p>
+			<strong>Modalidade:</strong>
+			<%= @atividade.modalidade.titulo %>
+		</p>
+
+		<p>
+			<strong>Aluno:</strong>
+			<%= @atividade.aluno.nome if @atividade.aluno_id? %>
+		</p>
+
+		<p>
+			<strong>Horas req:</strong>
+			<%= @atividade.horas_req %>
+		</p>
+
+		<p>
+			<strong>Horas jul:</strong>
+			<%= @atividade.horas_jul %>
+		</p>
+
+		<p>
+			<strong>Anexo:</strong>
+			<%= @atividade.anexo %>
+		</p>
+
+		<p>
+			<strong>Julgador:</strong>
+			<%= @atividade.julgador.nome if @atividade.julgador_id? %>
+		</p>
+		<%= link_to 'Alterar', edit_atividade_path(@atividade),  class: "glyphicon glyphicon-pencil" %> |
+		<%= link_to 'Voltar', atividades_path ,  class: "glyphicon  glyphicon-backward "%>
+		
+	</div>
+</div>

@@ -1,0 +1,317 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bo",
+				"border"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/controllers/atividades_controller.rb",
+			"settings":
+			{
+				"buffer_size": 3550,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/Amorim/Google Drive/keys.txt",
+			"settings":
+			{
+				"buffer_size": 3846,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Ruby/Ruby.sublime-build",
+	"command_palette":
+	{
+		"height": 87.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"add re",
+				"Package Control: Add Repository"
+			],
+			[
+				"repo",
+				"Package Control: Remove Repository"
+			],
+			[
+				"",
+				"Package Control: Add Repository"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"INSTA",
+				"Package Control: Install Package"
+			],
+			[
+				"INSTAL",
+				"Package Control: Install Package"
+			],
+			[
+				"PACK",
+				"Package Control: Add Repository"
+			],
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Amorim/Google Drive/Inep/ContatoInicial.txt",
+		"/Users/Amorim/workspace/AtivCompl/app/views/atividades/index.html.erb",
+		"/Users/Amorim/workspace/AtivCompl/app/models/atividade.rb",
+		"/Users/Amorim/workspace/AtivCompl/app/controllers/atividades_controller.rb",
+		"/Users/Amorim/workspace/AtivCompl/config/environments/production-iff.rb",
+		"/Users/Amorim/workspace/AtivCompl/app/uploaders/anexo_uploader.rb",
+		"/Users/Amorim/workspace/AtivCompl/config/deploy.rb",
+		"/Users/Amorim/workspace/AtivCompl/config/environments/production.rb",
+		"/Users/Amorim/workspace/AtivCompl/app/helpers/atividades_helper.rb",
+		"/Users/Amorim/workspace/AtivCompl/app/views/atividades/_formbusca.html.erb",
+		"/Users/Amorim/workspace/AtivCompl/.gitignore",
+		"/Users/Amorim/workspace/AtivCompl/app/assets/stylesheets/application.css.scss",
+		"/Users/Amorim/workspace/AtivCompl/app/assets/stylesheets/pages.scss",
+		"/Users/Amorim/Library/Application Support/Sublime Text 2/Packages/User/SublimeHighlight.sublime-settings",
+		"/Users/Amorim/Library/Application Support/Sublime Text 2/Packages/Highlight/README.md",
+		"/Users/Amorim/Library/Application Support/Sublime Text 2/Packages/Highlight/SublimeHighlight.sublime-settings",
+		"/Users/Amorim/workspace/AtivCompl/app/assets/javascripts/application.js",
+		"/Users/Amorim/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/Amorim/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/Amorim/workspace/AtivCompl/app/views/atividades/_form.html.erb",
+		"/Users/Amorim/workspace/AtivCompl/Gemfile",
+		"/Users/Amorim/workspace/AtivCompl/app/assets/stylesheets/usuarios.scss",
+		"/Users/Amorim/workspace/AtivCompl/app/views/usuarios/_form.html.erb",
+		"/Users/Amorim/workspace/AtivCompl/app/views/layouts/_navbarlateral.erb",
+		"/Users/Amorim/workspace/AtivCompl/app/views/usuarios/index.html.erb",
+		"/Users/Amorim/workspace/AtivCompl/app/assets/stylesheets/main.scss",
+		"/Users/Amorim/workspace/AtivCompl/app/assets/stylesheets/simple-sidebar.css",
+		"/Users/Amorim/workspace/AtivCompl/app/views/atividades/show.html.erb",
+		"/Users/Amorim/workspace/AtivCompl/app/views/layouts/_navbar.html.erb",
+		"/Users/Amorim/workspace/AtivCompl/app/views/layouts/application.html.erb",
+		"/Users/Amorim/workspace/AtivCompl/AtivCompl.sublime-project",
+		"/Users/Amorim/workspace/AtivCompl/AtivCompl.sublime-workspace",
+		"/Users/Amorim/workspace/meuprojeto01/app/assets/stylesheets/application.css.scss",
+		"/Users/Amorim/workspace/meuprojeto01/config/routes.rb",
+		"/Users/Amorim/workspace/meuprojeto01/app/assets/images/header.png",
+		"/Users/Amorim/workspace/meuprojeto01/app/views/layouts/application.html.erb",
+		"/Users/Amorim/workspace/meuprojeto01/config/environments/production.rb",
+		"/Users/Amorim/workspace/meuprojeto01/app/views/alunos/show.html.erb",
+		"/Users/Amorim/workspace/meuprojeto01/app/controllers/application_controller.rb",
+		"/Users/Amorim/workspace/meuprojeto01/app/controllers/alunos_controller.rb",
+		"/Users/Amorim/workspace/meuprojeto01/app/assets/stylesheets/alunos.scss",
+		"/Users/Amorim/workspace/meuprojeto01/app/assets/javascripts/application.js",
+		"/Users/Amorim/workspace/meuprojeto01/app/assets/javascripts/alunos.coffee",
+		"/Users/Amorim/workspace/meuprojeto01/MeuProjeto01.sublime-project",
+		"/Users/Amorim/workspace/meuprojeto01/app/assets/stylesheets/scaffolds.scss",
+		"/Users/Amorim/workspace/meuprojeto01/app/views/alunos/index.html.erb",
+		"/Users/Amorim/workspace/meuprojeto01/app/assets/stylesheets/application.css"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/Amorim/workspace/AtivCompl",
+			"/Users/Amorim/workspace/",
+			"/Users/Amorim/workspace/meuprojeto01"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"km",
+			"nexo",
+			"anexo",
+			"url",
+			"anexo_url",
+			"url",
+			"datepick",
+			"inputmask",
+			"../../",
+			"asset_path",
+			"radio",
+			"image"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/controllers/atividades_controller.rb",
+					"settings":
+					{
+						"buffer_size": 3550,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								777,
+								777
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/Amorim/Google Drive/keys.txt",
+					"settings":
+					{
+						"buffer_size": 3846,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1917,
+								1917
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1019.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/Amorim/workspace/meuprojeto01/MeuProjeto01.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 229.0,
+	"status_bar_visible": true
+}

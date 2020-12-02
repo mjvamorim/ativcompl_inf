@@ -1,0 +1,60 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h2>Atividades</h2>
+		<%= render 'formbusca' %>
+	</div>
+	<div class="panel-body">
+
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Aluno</th>
+					<th>Descricao</th>
+					<th>Modalidade</th>
+					<th>Hs Req.</th>
+					<th>Hs Julg.</th>
+					<th>Anexo</th>
+					<th>Julgador</th>
+					<th>Opções</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<% totalreq=0; totaljul=0; %>
+				<% @atividades.each do |atividade| %>
+					<% atividade.horas_req ? totalreq=totalreq + atividade.horas_req : totalreq = totalreq + 0%>
+					<% atividade.horas_jul ? totaljul=totaljul + atividade.horas_jul : totaljul = totaljul + 0%>
+
+				<tr>
+					<td><%= atividade.aluno.nome if atividade.aluno %></td>
+					<td><%= link_to atividade.descricao , edit_atividade_path(atividade), class: "" %></td>
+					<td><%= atividade.modalidade.titulo if atividade.modalidade %></td>
+					<td><%= atividade.horas_req %></td>
+					<td><%= atividade.horas_jul %></td>
+					<td><%= link_to "...", './'+atividade.anexo_url, target: 'blank_',class: "glyphicon glyphicon-paperclip"  if atividade.anexo_url %></td>
+					<td><%= atividade.julgador.nome if atividade.julgador %></td>
+  				<td>
+						<% if  not(atividade.horas_jul) or not (current_user.tipo == 'Aluno')%>
+    					<%= link_to ' ', edit_atividade_path(atividade),  class: "glyphicon glyphicon-pencil" %>
+    					<%= link_to ' ', atividade, method: :delete, data: { confirm: 'Are you sure?' } , class: "glyphicon glyphicon-trash" %>
+						<%end%>
+					</td>
+				</tr>
+				<% end %>
+				
+				<tr>
+					<td colspan=3 align=right>Totais</td>
+					<td><%= totalreq %></td>
+					<td><%= totaljul %></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<%= will_paginate @atividades  , renderer: BootstrapPagination::Rails, previous_label: "Anterior", next_label: "Próxima" %>	
+		<%= link_to 'Nova Atividade', new_atividade_path ,  class: "btn btn-default "%>
+
+	</div>
+</div>
