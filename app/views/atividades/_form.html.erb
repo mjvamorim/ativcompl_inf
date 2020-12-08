@@ -28,7 +28,7 @@
     
   	<p>
     	<label>Anexo:</label>
-			<%= link_to @atividade.anexo, '/ativ/'+@atividade.anexo_url, class: "glyphicon glyphicon-paperclip", target: '_blank'  if @atividade.anexo? %>
+			<%= link_to @atividade.anexo, @atividade.anexo_url, class: "glyphicon glyphicon-paperclip", target: '_blank'  if @atividade.anexo? %>
 			<%= f.file_field :anexo, label: 'Anexo' , input_html: {accept: ('application/pdf') } %>
 			<%= f.hidden_field :anexo_cache %>
 		</p>
